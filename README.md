@@ -6,8 +6,8 @@
 [es](https://elasticsearch.cn/explore)  
 [GitHub deploy key](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys)  
 [Bootstrap](https://v3.bootcss.com/getting-started/)  
-[GitHub Oauth](https://developer.github.com/apps/building-github-apps/creating-a-github-app/)  
+[GitHub Oauth](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/)  
 
 ## 工具
-https://git-scm.com/download
-https://v3.bootcss.com/
+[Git](https://git-scm.com/download)
+[Visual Paradigm](https://www.visual-paradigm.com/)
