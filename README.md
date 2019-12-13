@@ -7,6 +7,7 @@
 [GitHub deploy key](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys)  
 [Bootstrap](https://v3.bootcss.com/getting-started/)  
 [GitHub Oauth](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/)  
+[Spring Boot](https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/html/spring-boot-features.html#boot-features-sql)
 
 ## 工具
 [Git](https://git-scm.com/download)
