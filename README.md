@@ -19,6 +19,7 @@
 [Flyway](https://flywaydb.org/getstarted/firststeps/maven)  
 [Lombok](https://projectlombok.org/)  
 [H2数据库](http://www.h2database.com/html/main.html)  
+[Jquery](https://jquery.com/download/)  
 
 ## 脚本
 ```sql
