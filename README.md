@@ -12,7 +12,8 @@
 [OkHttp](https://square.github.io/okhttp/#get-a-url)  
 [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#setting-attribute-values)  
 [Spring Dev Tool](https://docs.spring.io/spring-boot/docs/2.1.11.RELEASE/reference/html/using-boot-devtools.html)  
-[Spring MVC](https://docs.spring.io/spring/docs/5.2.2.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)
+[Spring MVC](https://docs.spring.io/spring/docs/5.2.2.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)  
+[MyBatis Generator](http://mybatis.org/generator/running/runningWithMaven.html)  
 
 ## 工具
 [Git](https://git-scm.com/download)  
@@ -21,6 +22,9 @@
 [Lombok](https://projectlombok.org/)  
 [H2数据库](http://www.h2database.com/html/main.html)  
 [Jquery](https://jquery.com/download/)  
+### 浏览器插件
+- One Tab
+- Octotree
 
 ## 脚本
 ```sql
@@ -36,4 +40,5 @@ create table USER
 ```
 ```bash
 mvn flyway:migrate
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 ```
