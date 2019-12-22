@@ -10,8 +10,9 @@
 [Spring Boot](https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/html/spring-boot-features.html#boot-features-sql)  
 [MyBatis-Spring-Boot-Starter](http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)  
 [OkHttp](https://square.github.io/okhttp/#get-a-url)  
-[Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#setting-attribute-values)   
-
+[Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#setting-attribute-values)  
+[Spring Dev Tool](https://docs.spring.io/spring-boot/docs/2.1.11.RELEASE/reference/html/using-boot-devtools.html)  
+[Spring MVC](https://docs.spring.io/spring/docs/5.2.2.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)
 
 ## 工具
 [Git](https://git-scm.com/download)  
