@@ -39,6 +39,6 @@ create table USER
 );
 ```
 ```bash
-mvn flyway:migrate
-mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+使用Flyway管理数据库：mvn flyway:migrate
+使用逆向工程：mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 ```

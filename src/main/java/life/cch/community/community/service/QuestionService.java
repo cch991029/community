@@ -4,6 +4,7 @@ import life.cch.community.community.dto.PaginationDTO;
 import life.cch.community.community.dto.QuestionDTO;
 import life.cch.community.community.exception.CustomizeErrorCode;
 import life.cch.community.community.exception.CustomizeException;
+import life.cch.community.community.mapper.QuestionExtMapper;
 import life.cch.community.community.mapper.QuestionMapper;
 import life.cch.community.community.mapper.UserMapper;
 import life.cch.community.community.model.Question;
@@ -24,6 +25,9 @@ import java.util.List;
 public class QuestionService {
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private QuestionExtMapper questionExtMapper;
 
     @Autowired
     private QuestionMapper questionMapper;
@@ -120,5 +124,19 @@ public class QuestionService {
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
         }
+    }
+
+    public void incView(Integer id) {
+        /*Question question = questionMapper.selectByPrimaryKey(id);
+        Question updateQuestion = new Question();
+        updateQuestion.setViewCount(question.getViewCount() + 1);
+        QuestionExample questionExample = new QuestionExample();
+        questionExample.createCriteria()
+                .andIdEqualTo(id);
+        questionMapper.updateByExampleSelective(updateQuestion, questionExample);*/
+        Question question = new Question();
+        question.setId(id);
+        question.setViewCount(1);
+        questionExtMapper.incView(question);
     }
 }
