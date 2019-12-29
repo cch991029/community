@@ -57,6 +57,22 @@ body {
     border-bottom: 1px solid #eee;
 }
 
+.sub-comments {
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sub-comments .btn {
+    margin: 10px 0;
+}
+
+.sub-comments .btn-success {
+    margin-right: 15px;
+}
+
 .btn-comment {
     float: right;
     margin-bottom: 15px;
@@ -77,23 +93,33 @@ body {
     cursor: pointer;
 }
 
+.menu .comment-icon {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu .comment-icon:hover{
+    color: #499ef3;
+}
+
+.menu .active {
+    color: #499ef3;
+}
+
 .menu .icon:hover {
     color: #499ef3;
 }
 
-/*!*
-测试用*!
+/*测试用
 .left-img {
     padding-top: 30px;
     padding-right: 30px;
 }
 .middle-comment {
-    !*测试*!
     width: 64px;
     height: 64px;
 }
 .right-btn {
-    !*测试*!
     width: 80px;
     height: 70px;
     margin-top: 28px;

@@ -2,6 +2,7 @@ package life.cch.community.community.controller;
 
 import life.cch.community.community.dto.CommentDTO;
 import life.cch.community.community.dto.QuestionDTO;
+import life.cch.community.community.enums.CommentTypeEnum;
 import life.cch.community.community.service.CommentService;
 import life.cch.community.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,19 +26,19 @@ public class QuestionController {
     private CommentService commentService;
 
     @GetMapping("/question/{id}")
-    public String question(@PathVariable(value = "id") Long id, Model model){
+    public String question(@PathVariable(value = "id") Long id, Model model) {
         //累加阅读数
         questionService.incView(id);
 
-        List<CommentDTO> comments = commentService.listByQuestionId(id);
+        List<CommentDTO> comments = commentService.listByTargetId(id, CommentTypeEnum.QUESTION);
         QuestionDTO questionDTO = questionService.getById(id);
-        model.addAttribute("question",questionDTO);
-        model.addAttribute("comments",comments);
+        model.addAttribute("question", questionDTO);
+        model.addAttribute("comments", comments);
         return "question";
     }
 
     @GetMapping("/newYear")
-    public String newYear(){
+    public String newYear() {
         return "NewYearCountdown";
     }
 }
