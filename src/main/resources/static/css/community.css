@@ -46,8 +46,23 @@ body {
     padding-left: 0;
 }
 
+.publish-tag-tab {
+    display: none;
+    margin-top: 20px;
+}
+
+.publish-tag-tab .tag-info {
+    margin: 5px;
+    white-space: normal;
+    display: inline-flex;
+}
+
+.tab-content {
+    padding-top: 5px;
+    cursor: pointer;
+}
+
 .community-menu {
-    display: block;
     font-size: 13px;
     color: #999;
     margin-bottom: 15px;
