@@ -14,6 +14,7 @@
 [Spring Dev Tool](https://docs.spring.io/spring-boot/docs/2.1.11.RELEASE/reference/html/using-boot-devtools.html)  
 [Spring MVC](https://docs.spring.io/spring/docs/5.2.2.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)  
 [MyBatis Generator](http://mybatis.org/generator/running/runningWithMaven.html)  
+[Markdown 插件](https://pandao.github.io/editor.md/)
 
 ## 工具
 [Git](https://git-scm.com/download)  
