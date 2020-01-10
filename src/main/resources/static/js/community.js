@@ -10,6 +10,7 @@ function post() {
 function addComment(targetId,type,content) {
     if(!content){
         alert("不能回复空内容~~~");
+        return;
     }
 
     $.ajax({
