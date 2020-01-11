@@ -6,6 +6,7 @@ import life.cch.community.community.mapper.UserMapper;
 import life.cch.community.community.model.User;
 import life.cch.community.community.provider.GitHubProvider;
 import life.cch.community.community.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,7 @@ import java.util.UUID;
  * Created by codedrinker on 2019-12-12 20:22:08
  */
 @Controller
+@Slf4j
 public class AuthorizeController {
 
     @Autowired
@@ -62,6 +64,7 @@ public class AuthorizeController {
             return "redirect:/";
         }else{
             //登录失败，重新登录
+            log.error("callback get github error,{}",gitHubUser);
             return "redirect:/";
         }
     }
