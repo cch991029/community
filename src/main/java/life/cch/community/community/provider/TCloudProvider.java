@@ -6,7 +6,6 @@ import com.qcloud.cos.auth.BasicCOSCredentials;
 import com.qcloud.cos.auth.COSCredentials;
 import com.qcloud.cos.exception.CosClientException;
 import com.qcloud.cos.exception.CosServiceException;
-import com.qcloud.cos.http.HttpMethodName;
 import com.qcloud.cos.model.*;
 import com.qcloud.cos.region.Region;
 import com.tencent.cloud.CosStsClient;
@@ -17,8 +16,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.InputStream;
-import java.net.URL;
-import java.util.Date;
 import java.util.TreeMap;
 import java.util.UUID;
 

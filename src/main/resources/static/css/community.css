@@ -136,6 +136,13 @@ body {
     color: #499ef3;
 }
 
+.footer {
+    color: #666;
+    text-align: center;
+    font-style: oblique;
+    font-family: auto;
+}
+
 /*测试用
 .left-img {
     padding-top: 30px;

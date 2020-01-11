@@ -16,7 +16,7 @@
     <script src="/editormd/lib/prettify.min.js"></script>
 </head>
 <body>
-<div th:replace="navigation :: nav"></div>
+<div th:insert="navigation :: nav"></div>
 <div class="container-fluid main profile">
     <div class="row">
 
@@ -185,5 +185,6 @@
 
     </div>
 </div>
+<div th:insert="footer :: foot"></div>
 </body>
 </html>
