@@ -45,15 +45,24 @@ public class QuestionService {
         PaginationDTO paginationDTO = new PaginationDTO();
         QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
         questionQueryDTO.setSearch(search);
+
+        Integer totalPage;
         Integer totalCount = questionExtMapper.countBySearch(questionQueryDTO);
 
-        paginationDTO.setPagination(totalCount, page, size);
+        if (totalCount % size == 0) {
+            totalPage = totalCount / size;
+        } else {
+            totalPage = totalCount / size + 1;
+        }
+
         if (page < 1) {
             page = 1;
         }
-        if (page > paginationDTO.getTotalPage()) {
-            page = paginationDTO.getTotalPage();
+        if (page > totalPage) {
+            page = totalPage;
         }
+
+        paginationDTO.setPagination(totalPage, page);
 
         //size*(page-1)
         Integer offset = size * (page - 1);
@@ -75,17 +84,26 @@ public class QuestionService {
     public PaginationDTO getQuestionDTOList(Long userId, Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
 
+        Integer totalPage;
+
         QuestionExample questionExample = new QuestionExample();
         questionExample.createCriteria()
                 .andCreatorEqualTo(userId);
         Integer totalCount = (int) questionMapper.countByExample(questionExample);
-        paginationDTO.setPagination(totalCount, page, size);
+        if (totalCount % size == 0) {
+            totalPage = totalCount / size;
+        } else {
+            totalPage = totalCount / size + 1;
+        }
+
         if (page < 1) {
             page = 1;
         }
-        if (page > paginationDTO.getTotalPage()) {
-            page = paginationDTO.getTotalPage();
+        if (page > totalPage) {
+            page = totalPage;
         }
+
+        paginationDTO.setPagination(totalPage, page);
 
         //size*(page-1)
         Integer offset = size * (page - 1);
