@@ -1,5 +1,29 @@
 ## 以撒社区
 
+## 部署
+### 依赖
+- Git
+- JDK
+- Maven
+- MySQL
+## 步骤
+- yum update
+- yum install git
+- mkdir App
+- cd App
+- git clone https://github.com/cch991029/community.git
+- yum install maven
+- mvn -v
+- mvn clean compile package
+- cp src/main/resources/application.properties src/main/resources/application-production.properties
+- vim src/main/resources/application-production.properties
+- mvn package
+- java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar  到这里就结束了
+因为回调地址的原因，所以进行以下修改
+- ps -aux | grep java 检查当前进程是否存在
+- git pull
+- mvn package
+
 ## 资料
 [Spring 文档](https://spring.io/guides)  
 [Spring Web](https://spring.io/guides/gs/serving-web-content/)  

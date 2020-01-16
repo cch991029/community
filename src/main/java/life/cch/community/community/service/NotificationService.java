@@ -29,9 +29,6 @@ public class NotificationService {
     @Autowired
     private NotificationMapper notificationMapper;
 
-    @Autowired
-    private UserMapper userMapper;
-
     public PaginationDTO list(Long userId, Integer page, Integer size) {
         PaginationDTO<NotificationDTO> paginationDTO = new PaginationDTO<>();
         Integer totalPage;
