@@ -30,7 +30,7 @@ function addComment(targetId,type,content) {
                 if(data.code == 2003){
                     var isAccepted = confirm(data.message);
                     if(isAccepted){
-                        window.open("https://github.com/login/oauth/authorize?client_id=3fa274ba7fa0eb87e601&redirect_uri=http://localhost:8887/callback&scope=user&state=1");
+                        window.open("https://github.com/login/oauth/authorize?client_id=3fa274ba7fa0eb87e601&redirect_uri=http://111.229.77.128/callback&scope=user&state=1");
                         window.localStorage.setItem("closeable","true");
                     }
                 }else {
